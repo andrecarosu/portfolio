@@ -30,10 +30,13 @@ function HomePrincipal() {
       <div className={style.divnav}>
         <nav className={style.nav}>
         <a  href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Inicio</a>
+        <a 
+          href="https://drive.google.com/file/d/1vMFHsEkzjTpWu8TtXDTmRBbVVtYLdc0p/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            Mi currículum</a>
           <a   href="#seccion1">Sobre mí</a>
           <a  href="#seccion2">Habilidades</a>
           <a  href="#seccion3">Proyectos</a>
-          <a  href="#seccion4">Contacto</a>
+          <a  href="#seccion4">Contacto</a>           
         </nav>
         </div>
         <div  className={style.divSeccion1}>
@@ -53,9 +56,9 @@ function HomePrincipal() {
           <p className={style.p1}>            
           Soy una apasionada de la programación con diez años de experiencia en el campo de los sistemas informáticos. 
           Durante mi trayectoria, he tenido la oportunidad de explorar diversas áreas de la tecnología, pero mi verdadero interés siempre ha sido la programación.</p> <br></br>
-          <a className={style.aSeccion1} 
+          {/* <a className={style.aSeccion1} 
           href="https://drive.google.com/file/d/1vMFHsEkzjTpWu8TtXDTmRBbVVtYLdc0p/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-            mira mi curriculum</a> <br></br>
+            mira mi curriculum</a> <br></br> */}
             </div>
             <br></br>
 
@@ -68,9 +71,17 @@ function HomePrincipal() {
         <h1 className={style.h5} >Sobre mí</h1> <br></br>
           <p className={style.p2}>
 
-         Mi objetivo principal es obtener una oportunidad laboral en una empresa que me brinde un entorno propicio  <br></br>
-         para mi crecimiento profesional. Aspiro a continuar expandiendo mis conocimientos y habilidades en el campo  <br></br>
-         de la programación, colaborando con equipos talentosos y enfrentando desafíos estimulantes <br></br>
+          En este momento, me encuentro en la búsqueda laboral activa y estoy con espectativa de encontrar una oportunidad que me permita 
+          demostrar mis habilidades y seguir creciendo como profesional. Me encantaría invitarlo(a) a revisar mi currículum y conocer más
+           acerca de mi experiencia.  <br></br>
+           <br></br>       
+
+           Agradezco sinceramente su atención y quedo a su disposición para cualquier consulta. 
+         <br></br>
+         <br></br>
+         <br></br>
+         
+           ¡Saludos cordiales!
          
          </p>
         </div>
