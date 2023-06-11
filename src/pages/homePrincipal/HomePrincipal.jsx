@@ -8,6 +8,10 @@ import postgresImage from "../../assets/images/postgres.png";
 import nodeImage from "../../assets/images/node.png";
 import reactImage from "../../assets/images/react.png";
 import expressImage from "../../assets/images/express.png";
+import img_ecommerceImage from "../../assets/images/img_ecommerce.png";
+import ContactUs from "../ContactUs";
+import DrawerMenu from "../drawerMenu/DrawerMenu";
+
 function HomePrincipal() {
 
   const text = 'Hola mi nombre es:';
@@ -22,17 +26,22 @@ function HomePrincipal() {
     { name: 'React', src: reactImage },
     { name: 'Express', src: expressImage },
   ];
+
+  let img = img_ecommerceImage;
    
 
   return (
     <div >
       
       <div className={style.divnav}>
+      <div className={style.menu}>
+        <DrawerMenu />
+       </div>
         <nav className={style.nav}>
-        <a  href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Inicio</a>
-        <a 
+        <a  style={{ textAlign: 'left', marginRight: '600px' }}
           href="https://drive.google.com/file/d/1vMFHsEkzjTpWu8TtXDTmRBbVVtYLdc0p/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
             Mi currículum</a>
+        <a  href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Inicio</a>
           <a   href="#seccion1">Sobre mí</a>
           <a  href="#seccion2">Habilidades</a>
           <a  href="#seccion3">Proyectos</a>
@@ -101,8 +110,41 @@ function HomePrincipal() {
 </p>
   </div>
   <br></br>
-        <span id="seccion3"></span>
+        <div className={style.divSeccion5}>
+        <span className={style.divSeccion3} id="seccion3"></span>
+
+      <h1 className={style.h6}>Proyectos</h1>
+       <h3>Ecommerce de Venta de vinos</h3>  
+       <span className={style.h7}>Utilizamos para este proyecto la metodología Scrum, patron de diseño MVC y tecnologías React, Sequelize,
+        Postgresql, Express, Nodejs, Github, y JavaScript.
+       </span>
+      <img className={style.imagenProyect} src={img} alt="Ecommerce" />
+      <div className={style.divSeccion4} >
       
+      <p className={style.p4}>
+        <span className={style.h8}>The wine cellar  </span>
+        es una tienda de vinos que permite hacer compras en internet
+        por medio de la plataforma de pagos de mercado pago; cuenta con un panel
+        de administrador a través del cuál se puede crear, actualizar, eliminar productos, usuarios
+        y ver el historial de ventas; en la parte del cliente comprador
+        se puede iniciar sesión por google o registrarse en la página, al iniciar sesión se habilita un panel 
+        de usuario, con opción de ver el historial de compras realizadas, actualizar perfil, calificar y comentar
+        los distintos productos comprados, teniendo en cuenta tanto la calidad del producto, como la experiencia de compra.
+        Quisimos brindarle a ambos usuarios (administrador y comprador),  una buena experiencia de usuario, es por eso 
+        que nos esmeramos en hacer una aplicación intuitiva, con un diseño sencillo y fácil de usar.
+        </p> <br></br>  
+        <a className={style.aSeccion3} 
+          href="https://ecommerce-khaki-nine.vercel.app" target="_blank" rel="noopener noreferrer">
+           Ver Proyecto</a> <br></br> 
+        </div>         
+        </div>
+
+        <div className={style.divSeccion6}>
+        <span  id="seccion4"></span> 
+        <h1 className={style.h6}>Contacto</h1> 
+        <span>Si desea me puede enviar un correo llenando estos campos: </span>
+        <ContactUs />
+        </div>
     </div>
   );
 }
