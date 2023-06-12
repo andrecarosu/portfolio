@@ -3,15 +3,9 @@
     /* flex-direction: column; */
     justify-content: space-around;
     align-items: center;
-    height: 100%;
-    background-color: rgb(241, 139, 4);
+    height: auto;
+    background-color: rgb(230, 215, 230);
     
-}
-
-@media (max-width: 400px) {
-  .container {
-    height: 30%;
-  }
 }
 
 .nav {
@@ -21,8 +15,6 @@
     right: 0px;
     text-align: left;
     display: block;
-
-
   }
   
   .nav a {
@@ -31,7 +23,7 @@
     padding: 10px;
     top: 15px;
     bottom: 5px;
-    display: block;
+    display: block;    
   }
 
   .divnav {
@@ -40,7 +32,6 @@
     display: block;
     justify-content: center;
     margin: 5px;
-    background-color: bisque;
   } 
 
   .h1 {

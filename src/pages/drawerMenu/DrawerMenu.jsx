@@ -14,11 +14,11 @@ export default function DrawerMenu() {
 
     return (
         <>
-            <div className={style.container} onClick={toggleDrawer} style={{ cursor: 'pointer' }}> <IconMenu /> </div>
+            <div  onClick={toggleDrawer} style={{ cursor: 'pointer' }}> <IconMenu /> </div>
 
-            <Drawer open={isOpen} onClose={toggleDrawer} direction='left'>
-                <div className={style.container}>
-                    <div>
+            <Drawer style={{ height: '70%', backgroundColor:'rgb(230, 215, 230)' }}className={style.container} open={isOpen} onClose={toggleDrawer} direction='left'>
+                <div >
+                    <div >
                         <h1 className={style.h1}>Mi Portafolio</h1>
                     </div>
                     <div className={style.divnav}>
