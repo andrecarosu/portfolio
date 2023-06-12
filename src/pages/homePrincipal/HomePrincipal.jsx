@@ -142,7 +142,7 @@ function HomePrincipal() {
         <div className={style.divSeccion6}>
         <span  id="seccion4"></span> 
         <h1 className={style.h6}>Contacto</h1> 
-        <span>Si desea me puede enviar un correo llenando estos campos: </span>
+        <span className={style.spanSeccion4}>Si desea me puede enviar un correo llenando estos campos: </span>
         <ContactUs />
         </div>
     </div>

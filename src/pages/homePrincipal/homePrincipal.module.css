@@ -325,7 +325,10 @@
 
     .seccion3{
       margin-top: 100px;
-      margin-bottom: 200px;
+      margin-bottom: 220px;
+    }
+    .spanSeccion4{
+      padding: 5px;
     }
 
     .imagenProyect{
@@ -340,26 +343,9 @@
   @media (min-width: 768px) and (max-width: 991px) {
     /* Estilos para tablets */
 
-    .divSeccion1{
-      margin-top:330px;
-    }
-    .menu {
-      display: none;
-    }
-
-    .nav a{
-      display: block;
-      text-align: left;
-    }
+   
     .nav {
-      display: block;
-      text-align: right;
-    }
-
-    .divnav{
-      display: block;
-      text-align: right;
-      height: auto;
+      display: none;
     }
 
   
