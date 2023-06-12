@@ -14,7 +14,7 @@ export default function DrawerMenu() {
 
     return (
         <>
-            <div onClick={toggleDrawer} style={{ cursor: 'pointer' }}> <IconMenu /> </div>
+            <div className={style.container} onClick={toggleDrawer} style={{ cursor: 'pointer' }}> <IconMenu /> </div>
 
             <Drawer open={isOpen} onClose={toggleDrawer} direction='left'>
                 <div className={style.container}>
