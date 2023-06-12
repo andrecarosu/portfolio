@@ -269,6 +269,10 @@
       display: none;
     }
 
+    .menu {
+      position: fixed;
+    }
+
     .h1{
       font-size: 25px;
     }
