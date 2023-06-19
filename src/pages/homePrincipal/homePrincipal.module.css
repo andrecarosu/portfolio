@@ -55,6 +55,39 @@
   font-size: 50px;
 }
 
+.h3 {
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.h5{
+  color: rgb(44, 2, 83);
+  font-size: 40px;
+  top: 150px;
+}
+
+.h6{
+  color: rgb(44, 2, 83);
+  font-size: 40px;
+  margin-top: 23px;
+  margin-bottom: 5px;
+}
+
+.h7{
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  
+}
+
+.h8{
+  font-size: 20px;
+  color: blueviolet;
+}
+
+
+
 .divnav {
     top: 0;
     position: fixed;
@@ -69,17 +102,21 @@
     display: inline-flex;
   } 
 
-
   .divSeccion1{
     margin-top: 60px;
     text-align: left;
     margin-left: 120px;
   }
 
-  .h3 {
-    margin-top: 10px;
-    font-size: 30px;
-    text-align: left;
+  .seccion2{
+    margin-top: 230px;    
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .seccion3{
+    margin-top: 60px;
+    margin-bottom: 10px;
   }
 
  .color-animation {
@@ -117,58 +154,17 @@
     font-size: 25px;
     margin-top: 20px;
     text-align: justify;
-    padding: 30px;
-    
-  }
-  
-  
-  .seccion2{
-    margin-top: 80px;
-    
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 30px;    
   }
 
   .p2{
     font-size: 20px;
     margin-top: 30px;
-    margin-bottom: 150px;
-    
-  }
-
-  .h5{
-    color: rgb(44, 2, 83);
-    font-size: 40px;
-    top: 150px;
-  }
-
-  .seccion3{
-    margin-top: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 150px;    
   }
 
   .p3{
-    bottom: 120px;
-    
-  }
-
-  .h7{
-    font-size: 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    
-  }
-
-  .h8{
-    font-size: 20px;
-    color: blueviolet;
-  }
-
-  .h6{
-    color: rgb(44, 2, 83);
-    font-size: 40px;
-    margin-top: 23px;
-    margin-bottom: 5px;
+    bottom: 120px;    
   }
 
   .p4{
@@ -177,8 +173,16 @@
     font-style: italic;
     padding-left: 5px;
     padding-right: 5px;
-    
+  }
 
+  .h10{
+    color: rgb(44, 2, 83);
+    font-size: 40px;
+    margin-top: -130px;
+  }
+
+  .p10{
+    margin-top: -160px;
   }
 
   .divSeccion3{
@@ -214,6 +218,26 @@
 .divSeccion6{
   
   margin-bottom: 70px;
+}
+
+.divSeccion10{
+  display: flex;
+  flex-direction: row;
+  margin-left: 250px;
+  margin-right: 250px;
+
+}
+
+.divSeccion11{
+  display: block;
+  flex-direction: column;
+
+}
+
+.spanSeccion4{
+  margin-left: 450px;
+  color: rgb(72, 4, 134);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
   .imagenProyect{
     height: 300px;
@@ -289,14 +313,10 @@
       margin-right: 25px;
       padding: 5px;
       text-align: left;
-    }
-
-    .h5{
-      margin-top: -35px;
-    }
+    }   
 
     .divSeccion6{
-      margin-bottom: 5px;
+      padding-bottom: 30px;
     }
 
     .p1{
@@ -320,7 +340,8 @@
     
     .seccion2{
       
-      margin-top: 30px;
+      margin-top: 190px;
+      margin-bottom: 240px;
     }
 
     .seccion3{
@@ -328,8 +349,7 @@
       margin-bottom: 220px;
     }
     .spanSeccion4{
-      padding: 5px;
-      margin-bottom: 60px;
+     display: none;
     }
 
     .imagenProyect{
@@ -337,6 +357,12 @@
       width: 400px;
       margin-right: 5px;
       margin-left: 5px;
+  }
+
+  .divSeccion10{
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;  
   }
     
   }

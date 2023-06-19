@@ -11,8 +11,11 @@ import expressImage from "../../assets/images/express.png";
 import img_ecommerceImage from "../../assets/images/img_ecommerce.png";
 import ContactUs from "../ContactUs";
 import DrawerMenu from "../drawerMenu/DrawerMenu";
+import Sobremi from '../sobremi/sobremi';
 
 function HomePrincipal() {
+  
+  
 
   const text = 'Hola mi nombre es:';
   const colors = ['red', 'green', 'blue', 'orange', 'purple', 'yellow', 'pink', 'cyan'];
@@ -32,7 +35,11 @@ function HomePrincipal() {
 
   return (
     <div >
-      
+       {/* <div>
+       <canvas id="canvas">
+         <h1> Hola mundo esto es un mensaje de prueba</h1>
+        </canvas>
+       </div> */}
       <div className={style.divnav}>
       <div className={style.menu}>
         <DrawerMenu />
@@ -70,31 +77,16 @@ function HomePrincipal() {
             mira mi curriculum</a> <br></br> */}
             </div>
             <br></br>
-
+           
             <span id="seccion1"></span>
-        <div  className={style.seccion2}>
-        <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-        <h1 className={style.h5} >Sobre mí</h1> <br></br>
-          <p className={style.p2}>
+        <div  className={style.seccion2}>        
+        <h1 className={style.h10} >Sobre mí</h1> <br></br>
+         <div className={style.p10}>
 
-          En este momento, me encuentro en la búsqueda laboral activa y estoy con espectativa de encontrar una oportunidad que me permita 
-          demostrar mis habilidades y seguir creciendo como profesional. Me encantaría invitarlo(a) a revisar mi currículum y conocer más
-           acerca de mi experiencia.  <br></br>
-           <br></br>       
+          <Sobremi />
+         </div>
+           </div>
 
-           Agradezco sinceramente su atención y quedo a su disposición para cualquier consulta. 
-         <br></br>
-         <br></br>
-         <br></br>
-         
-           ¡Saludos cordiales!
-         
-         </p>
-        </div>
-        <br></br>
         <span id="seccion2"></span>
         <div  className={style.seccion3}>
         <h1 className={style.h5} >Habilidades</h1>
@@ -141,10 +133,20 @@ function HomePrincipal() {
 
         <div className={style.divSeccion6}>
         <span  id="seccion4"></span> 
-        <h1 className={style.h6}>Contacto</h1> 
-        <span className={style.spanSeccion4}>Si desea me puede enviar un correo llenando estos campos: </span>
+              <h1 className={style.h6}>Contacto</h1>
+        <span className={style.spanSeccion4}>Me puede contactar por correo llenando estos campos: </span>
+              <div className={style.divSeccion10}> 
+              <div style={{ overflow: 'hidden', maxWidth: '100%', width: '500px', height: '500px' }}>
+        <div id="google-maps-display" style={{ height: '90%', width: '90%', maxWidth: '90%' }}>
+          <iframe style={{ height: '100%', width: '100%', border: '0' }} src="https://www.google.com/maps/embed/v1/place?q=Zipaquirá,+Cundinamarca,+Colombia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+        </div>
+      </div>
+        <div className={style.divSeccion11}>
         <ContactUs />
         </div>
+        </div>
+        </div>
+        
     </div>
   );
 }

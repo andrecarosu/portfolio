@@ -1,0 +1,15 @@
+#canvas{
+    background-color: hsl(214, 90%, 8%);
+    width: 70%;
+    height: 100%;		
+    margin-top: 150px;
+}
+
+@media (max-width: 767px) {
+    #canvas {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 10px;
+    }
+}
