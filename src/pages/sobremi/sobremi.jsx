@@ -64,7 +64,7 @@ function Sobremi() {
     //     ctx.fillText(lines[i], textX, y);  // Dibujar cada línea
     //     y += lineHeight;  // Actualizar la posición vertical para la siguiente línea
     // }
-    var maxLineWidth = c.width * 0.8; // Ancho máximo permitido para el texto
+    var maxLineWidth = c.width * 0.9; // Ancho máximo permitido para el texto
   var words = text.split(" ");
   var lines = [];
   var currentLine = words[0];
