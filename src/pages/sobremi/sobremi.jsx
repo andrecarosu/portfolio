@@ -21,7 +21,7 @@ function Sobremi() {
           }
           
         var light = {
-            x: c.width ,
+            x: c.width +500,
             y: 300
         }
         
