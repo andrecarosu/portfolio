@@ -22,7 +22,7 @@ function Sobremi() {
           
         var light = {
             x: c.width +350,
-            y: 300
+            y: 200
         }
         
         var colors = ["#f5c156", "#e6616b", "#5cd3ad"];
