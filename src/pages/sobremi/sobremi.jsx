@@ -18,10 +18,11 @@ function Sobremi() {
         function resize() {
             c.width = window.innerWidth;
             c.height = window.innerHeight;
+                       
           }
           
         var light = {
-            x: c.width +350,
+            x: c.width /2,
             y: 200
         }
         
@@ -241,30 +242,33 @@ var ctx = c.getContext("2d");
         var c = document.getElementById("canvas");
         var box = c.getBoundingClientRect();
         c.width = box.width;
-        c.height = box.height;
       }
       
-      function handleResize() {
+  
         //adjustCanvasSize();
        // draw();
        function resize() {
         var c = document.getElementById("canvas");
         c.width = window.innerWidth;
         c.height = window.innerHeight;
-      }
-      
+        window.location.reload();
+        
       }
       
       function handleOrientationChange() {
+        
         setTimeout(function() {
-          adjustCanvasSize();
+          resize(); // Llama a la función resize() para ajustar el tamaño del lienzo
           //draw();
-        }, 500); // Agrega un retraso de 500 ms para permitir que el cambio de orientación se complete antes de ajustar el lienzo y dibujar
+          
+          
+        }, 500);
       }
       
       // Asigna los manejadores de eventos
-      window.addEventListener('resize', handleResize);
+      window.addEventListener('resize', resize); // Llama directamente a la función resize() en el evento resize
       window.addEventListener('orientationchange', handleOrientationChange);
+      
       
 
       return (
