@@ -48,7 +48,7 @@ function Sobremi() {
             // Agregar texto
         ctx.font = "30px Arial";
         ctx.fillStyle = "#fff";
-        ctx.textAlign = "left";
+        ctx.textAlign = "center";
         var text = "En este momento, me encuentro en la búsqueda laboral activa y estoy con expectativa \n\n " +
         "de encontrar una oportunidad que me permita demostrar \n\n " +
          "mis habilidades y seguir creciendo como profesional.\n\n" +
@@ -249,7 +249,7 @@ var ctx = c.getContext("2d");
        // draw();
        function resize() {
         var c = document.getElementById("canvas");
-        c.width = window.innerWidth - 650;
+        c.width = window.innerWidth;
         c.height = window.innerHeight;
         window.location.reload();
         
