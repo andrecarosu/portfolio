@@ -245,8 +245,14 @@ var ctx = c.getContext("2d");
       }
       
       function handleResize() {
-        adjustCanvasSize();
+        //adjustCanvasSize();
        // draw();
+       function resize() {
+        var c = document.getElementById("canvas");
+        c.width = window.innerWidth;
+        c.height = window.innerHeight;
+      }
+      
       }
       
       function handleOrientationChange() {
