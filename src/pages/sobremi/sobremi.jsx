@@ -48,7 +48,7 @@ function Sobremi() {
             // Agregar texto
         ctx.font = "30px Arial";
         ctx.fillStyle = "#fff";
-        ctx.textAlign = "center";
+        ctx.textAlign = "left";
         var text = "En este momento, me encuentro en la búsqueda laboral activa y estoy con expectativa \n\n " +
         "de encontrar una oportunidad que me permita demostrar \n\n " +
          "mis habilidades y seguir creciendo como profesional.\n\n" +
