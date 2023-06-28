@@ -249,7 +249,7 @@ var ctx = c.getContext("2d");
        // draw();
        function resize() {
         var c = document.getElementById("canvas");
-        c.width = window.innerWidth - 150;
+        c.width = window.innerWidth - 650;
         c.height = window.innerHeight;
         window.location.reload();
         
