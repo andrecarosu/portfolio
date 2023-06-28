@@ -16,7 +16,7 @@ function Sobremi() {
         // }
         
         function resize() {
-            c.width = window.innerWidth;
+            c.width = window.innerWidth - 150;
             c.height = window.innerHeight;
                        
           }
