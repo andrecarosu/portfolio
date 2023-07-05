@@ -13,6 +13,7 @@ import ContactUs from "../ContactUs";
 import DrawerMenu from "../drawerMenu/DrawerMenu";
 import Sobremi from '../sobremi/sobremi';
 
+
 function HomePrincipal() {
   
   
@@ -34,7 +35,9 @@ function HomePrincipal() {
    
 
   return (
-    <div >
+    <div className={style.container} >
+
+      
        {/* <div>
        <canvas id="canvas">
          <h1> Hola mundo esto es un mensaje de prueba</h1>
@@ -67,11 +70,11 @@ function HomePrincipal() {
         </span>
       ))}
     </h3>
-          <h1 className={style.h1} >Andrea Carolina Suárez Mesa</h1>
-          <h1 className={style.h2} >Desarrolladora Web Full Stack</h1>
-          <p className={style.p1}>            
+           {/* <h1 className={style.h1} >Carolina Suárez</h1>
+          <h1 className={style.h2} >Desarrolladora Web Full Stack</h1> */}
+          {/*<p className={style.p1}>            
           Soy una apasionada de la programación con diez años de experiencia en el campo de los sistemas informáticos. 
-          Durante mi trayectoria, he tenido la oportunidad de explorar diversas áreas de la tecnología, pero mi verdadero interés siempre ha sido la programación.</p> <br></br>
+          Durante mi trayectoria, he tenido la oportunidad de explorar diversas áreas de la tecnología, pero mi verdadero interés siempre ha sido la programación.</p> <br></br> */}
           {/* <a className={style.aSeccion1} 
           href="https://drive.google.com/file/d/1vMFHsEkzjTpWu8TtXDTmRBbVVtYLdc0p/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
             mira mi curriculum</a> <br></br> */}
@@ -112,19 +115,7 @@ function HomePrincipal() {
        </span>
       <img className={style.imagenProyect} src={img} alt="Ecommerce" />
       <div className={style.divSeccion4} >
-      
-      <p className={style.p4}>
-        <span className={style.h8}>The wine cellar  </span>
-        es una tienda de vinos que permite hacer compras en internet
-        por medio de la plataforma de pagos de mercado pago; cuenta con un panel
-        de administrador a través del cuál se puede crear, actualizar, eliminar productos, usuarios
-        y ver el historial de ventas; en la parte del cliente comprador
-        se puede iniciar sesión por google o registrarse en la página, al iniciar sesión se habilita un panel 
-        de usuario, con opción de ver el historial de compras realizadas, actualizar perfil, calificar y comentar
-        los distintos productos comprados, teniendo en cuenta tanto la calidad del producto, como la experiencia de compra.
-        Quisimos brindarle a ambos usuarios (administrador y comprador),  una buena experiencia de usuario, es por eso 
-        que nos esmeramos en hacer una aplicación intuitiva, con un diseño sencillo y fácil de usar.
-        </p> <br></br>  
+       
         <a className={style.aSeccion3} 
           href="https://ecommerce-khaki-nine.vercel.app" target="_blank" rel="noopener noreferrer">
            Ver Proyecto</a> <br></br> 
@@ -133,8 +124,8 @@ function HomePrincipal() {
 
         <div className={style.divSeccion6}>
         <span  id="seccion4"></span> 
-              <h1 className={style.h6}>Contacto</h1>
-        <span className={style.spanSeccion4}>Me puede contactar por correo llenando estos campos: </span>
+              <h1 className={style.h9}>Contacto</h1>
+        <span className={style.spanSeccion4}>contactame por correo llenando estos campos: </span>
               <div className={style.divSeccion10}> 
               <div style={{ overflow: 'hidden', maxWidth: '100%', width: '500px', height: '500px' }}>
         <div id="google-maps-display" style={{ height: '90%', width: '90%', maxWidth: '90%' }}>
