@@ -12,11 +12,11 @@ import img_ecommerceImage from "../../assets/images/img_ecommerce.png";
 import ContactUs from "../ContactUs";
 import DrawerMenu from "../drawerMenu/DrawerMenu";
 import Sobremi from '../sobremi/sobremi';
+import linkedin from '../../assets/images/linkedin.png';
+import githubredes from '../../assets/images/githubredes.png';
+import whatsapp from '../../assets/images/whatsapp.png';
 
-
-function HomePrincipal() {
-  
-  
+function HomePrincipal() {  
 
   const text = 'Hola mi nombre es:';
   const colors = ['red', 'green', 'blue', 'orange', 'purple', 'yellow', 'pink', 'cyan'];
@@ -32,8 +32,9 @@ function HomePrincipal() {
   ];
 
   let img = img_ecommerceImage;
-   
-
+  let linked = linkedin;
+  let redesgithub = githubredes; 
+  let redeswhatsapp = whatsapp;
   return (
     <div className={style.container} >
 
@@ -51,14 +52,31 @@ function HomePrincipal() {
         <a  style={{ textAlign: 'left', marginRight: '600px' }}
           href="https://drive.google.com/file/d/1vMFHsEkzjTpWu8TtXDTmRBbVVtYLdc0p/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
             Mi currículum</a>
-        <a  href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Inicio</a>
+          <a  href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Inicio</a>
           <a   href="#seccion1">Sobre mí</a>
           <a  href="#seccion2">Habilidades</a>
           <a  href="#seccion3">Proyectos</a>
           <a  href="#seccion4">Contacto</a>           
         </nav>
         </div>
+        <div className={style.divredes}>
+          <a href="https://www.linkedin.com/in/andrecarosu">
+          <img className={style.imgredes} src={linked} alt="redes" />
+          </a>
+          <a href="https://github.com/andrecarosu">
+          <img className={style.imgredes} src={redesgithub} alt="github" />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=57+3014102103&text=Hola%20cliente,%20me%20gustaría%20contactarte%20por%20favor.">
+            <img className={style.imgredes} src={redeswhatsapp} alt="whatsapp" />
+          </a>
+        
+        </div>
         <div  className={style.divSeccion1}>
+        <div className={style.divimg}>
+          <img src="https://res.cloudinary.com/dfmkjxjsf/image/upload/v1688910405/20160625_112429_mqnjlp.jpg" />
+          
+          </div>
+          <div className={style.divnav2}>
         <h3 className={style.h3}>
       {Array.from(text).map((letter, index) => (
         <span
@@ -70,14 +88,10 @@ function HomePrincipal() {
         </span>
       ))}
     </h3>
-           {/* <h1 className={style.h1} >Carolina Suárez</h1>
-          <h1 className={style.h2} >Desarrolladora Web Full Stack</h1> */}
-          {/*<p className={style.p1}>            
-          Soy una apasionada de la programación con diez años de experiencia en el campo de los sistemas informáticos. 
-          Durante mi trayectoria, he tenido la oportunidad de explorar diversas áreas de la tecnología, pero mi verdadero interés siempre ha sido la programación.</p> <br></br> */}
-          {/* <a className={style.aSeccion1} 
-          href="https://drive.google.com/file/d/1vMFHsEkzjTpWu8TtXDTmRBbVVtYLdc0p/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-            mira mi curriculum</a> <br></br> */}
+          <h1 className={style.h1} >Carolina Suárez</h1>
+          <h1 className={style.h2} >Desarrolladora Web Full Stack</h1> 
+        
+          </div>
             </div>
             <br></br>
            

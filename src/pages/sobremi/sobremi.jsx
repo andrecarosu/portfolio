@@ -8,18 +8,17 @@ function Sobremi() {
         <div className={style.div2}>
         <h1 className={style.h1}>Quien soy?</h1>
         <p className={style.p}>
-        Soy una apasionada de la programación con diez años de experiencia en el campo de los sistemas informáticos. 
-        He tenido la oportunidad de explorar diversas áreas de la tecnología, pero mi verdadero interés siempre ha sido la programación
+        Soy programadora con diez años de experiencia en el campo de los sistemas informáticos. 
+        He tenido la oportunidad de explorar diversas áreas de la tecnología, aunque me he inclinado siempre por la programación.
         </p>
         </div>
         <div className={style.div2}>
         <h1 className={style.h1}>Qué hago?</h1>
         <p className={style.p}>
         Actualmente me encuentro tomando un curso de Ingles, de PHP y otro de Phyton, también estoy trabajando en proyectos 
-        grupales para afianzar mis conocimientos y aplicar cosas nuevas.
+        grupales en los que estoy afianzando mis conocimientos y aprendiendo a usar nuevas tecnologías.
         </p>
         </div>
-
         <div className={style.div2}>
         <h1 className={style.h1}>Hacia dónde voy?</h1>
         <p className={style.p}>

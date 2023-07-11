@@ -46,7 +46,6 @@
 .h1{
     margin-top: 50px;
     text-align: left;
-    margin-left: 80px;
     font-size: 50px;
     color: rgb(4, 107, 107);
 
@@ -69,21 +68,19 @@
 .h5{
   color: rgb(44, 2, 83);
   font-size: 40px;
-  margin-top: 350px;
-  font-family: 'Caprasimo', cursive;
+  margin-top: 250px;
 }
 
 .h6{
   color: rgb(44, 2, 83);
   font-size: 40px;
-  margin-top: 60px;
-  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: -10px;
 }
 
 .h7{
   font-size: 16px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
   
 }
 
@@ -95,7 +92,7 @@
 .h9{
   color: rgb(44, 2, 83);
   font-size: 40px;
-  margin-top: 240px;
+  margin-top: 320px;
   margin-bottom: 5px;
 }
 
@@ -106,7 +103,7 @@
     top: 0;
     position: fixed;
     /* background-color: rgba(51, 3, 45, 0.3); */
-    background-color: #b7934e;
+    background-color: #ca9fae;
     box-shadow: 3px 3px 4px 3px rgb(116, 45, 104);
     left: auto;
     right: 0;
@@ -117,18 +114,56 @@
     display: inline-flex;
   } 
 
+  .divnav2{
+   display: block;
+   text-align: left;
+   padding: 30px;
+  }
+
+  .divimg{
+    width: 380px;
+    height: 350px;
+    margin-left: 10px;
+    overflow: hidden;
+       
+  }
+
+  .divimg img {
+    width: 100%;
+    height: auto;  
+    object-fit: cover;
+    
+  }
+
+  .divredes {
+    display: flex;
+    position: fixed ;
+    bottom: 0px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .imgredes {
+    width: 40px;
+    height: 40px;
+    margin-left: 13px;
+    margin-right: 13px;
+  } 
+
   .divSeccion1{
+    display: flex;
+    flex-direction: row;
     margin-top: 60px;
     text-align: left;
     margin-left: 0px;
     padding: 30px;
     width: 1355px;
     height: 530px;
-    background-image: url('https://res.cloudinary.com/dfmkjxjsf/image/upload/v1688684130/fondoweb_w2bdkb.gif');
+    /* background-image: url('https://res.cloudinary.com/dfmkjxjsf/image/upload/v1688684130/fondoweb_w2bdkb.gif'); */
     background-repeat: no-repeat;
     background-position-y: 20px;
-
-    /* background-position: center; */
   }
 
     .seccion2{
@@ -138,7 +173,7 @@
   }
 
   .seccion3{
-    margin-top: 360px;
+    margin-top: 0px;
     margin-bottom: 10px;
   }
 
@@ -184,9 +219,9 @@
   }
 
   .p2{
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 150px;    
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 250px;    
   }
 
   .p3{
@@ -203,9 +238,8 @@
 
   .h10{
     color: rgb(44, 2, 83);
-    font-size: 70px;
+    font-size: 40px;
     margin-top: 5px;
-    font-family: 'Caprasimo', cursive;
   }
 
   .p10{
@@ -278,7 +312,7 @@
 
   .imagegrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
     z-index: 1;
   }
@@ -296,8 +330,8 @@
     /* width: 40%;
     height: auto;
     transition: transform 0.3s; */
-    max-width: 62%;
-  max-height: 60%;
+    max-width: 57%;
+  max-height: 55%;
   transition: transform 0.3s;
   background-color: black;
   }
@@ -338,6 +372,7 @@
 
     .h1{
       font-size: 25px;
+      margin-top: 0px;
     }
 
     .h2{
@@ -347,12 +382,35 @@
       padding: 5px;
       text-align: left;
     } 
+
+    .h3{
+      margin-top: -120px;
+    }
+
+    .h6{
+      font-size: 25px;
+      margin-top: 80px;
+    }
     
     .h9{
-      margin-top: 290px;
+      margin-top: 400px;
+    }
+
+    .h10{
+      margin-top: -140px;
+      font-size: 35px;
+    }
+
+    .divSeccion1{
+      text-align: center;
+      justify-content: center;
+      margin-top: 130px;
+      padding: 5px;
+      display: block;
     }
 
     .divSeccion6{
+      margin-top: 40px;
       padding-bottom: 30px;
     }
 
@@ -365,23 +423,7 @@
 
     .p10{
       margin-top: 0px;
-    }
-
-    .h10{
-      margin-top: -140px;
-    }
-
-    .divSeccion1{
-      text-align: left;
-      margin-right: 0px;
-      margin-left: 0px;
-      margin-bottom: 0px;
-      padding: 5px;
-      background-image: url('https://res.cloudinary.com/dfmkjxjsf/image/upload/v1688683766/fondowebcelu_xouys0.gif');
-      
-      background-repeat: no-repeat;
-      background-position-x: 0px;
-    }
+    }  
 
     .p2{
       margin-left: 3px;
@@ -390,12 +432,12 @@
     
     .seccion2{
       
-      margin-top: 190px;
+      margin-top: 260px;
       margin-bottom: 240px;
     }
 
     .seccion3{
-      margin-top: 100px;
+      margin-top: 380px;
       margin-bottom: 220px;
     }
     .spanSeccion4{
@@ -415,7 +457,18 @@
     margin-right: 30px;  
   }
 
- 
+  .divredes{
+    top:90px;
+    bottom: auto;
+  }
+
+  .divnav2 {
+    padding: 0px;
+  }
+
+  .divimg img {
+    width: 70%;
+  }
     
   }
   
@@ -459,7 +512,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(to right, #b1bc87, #b4a96b);
+    background: linear-gradient(to right, #d8c7be, #f9f9f6);
   }
   
   .container::after {
