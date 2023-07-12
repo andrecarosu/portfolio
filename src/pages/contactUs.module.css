@@ -57,10 +57,12 @@
 @media (max-width: 767px) {
  .inputForm{
     width: auto;
+    margin-left: 0px;
  }
 
  .textareaForm{
     width: auto;
+    
  }
 
 }
