@@ -53,3 +53,13 @@
 
 }
 
+
+@media (max-width: 767px) {
+ .labelForm{
+    width: auto;
+ }
+
+}
+
+
+
