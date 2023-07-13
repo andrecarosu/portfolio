@@ -300,6 +300,10 @@
   color: rgb(72, 4, 134);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.mapa{
+  margin-left: -25px;
+}
   .imagenProyect{
     height: 300px;
     width: 600px;
@@ -468,6 +472,10 @@
 
   .divimg img {
     width: 70%;
+  }
+
+  .mapa{
+    display: none;
   }
     
   }

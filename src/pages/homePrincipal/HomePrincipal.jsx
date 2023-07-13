@@ -60,13 +60,13 @@ function HomePrincipal() {
         </nav>
         </div>
         <div className={style.divredes}>
-          <a href="https://www.linkedin.com/in/andrecarosu">
+          <a href="https://www.linkedin.com/in/andrecarosu" target="_blank">
           <img className={style.imgredes} src={linked} alt="redes" />
           </a>
-          <a href="https://github.com/andrecarosu">
+          <a href="https://github.com/andrecarosu" target="_blank">
           <img className={style.imgredes} src={redesgithub} alt="github" />
           </a>
-          <a href="https://api.whatsapp.com/send?phone=57+3014102103&text=Hola%20cliente,%20me%20gustaría%20contactarte%20por%20favor.">
+          <a href="https://api.whatsapp.com/send?phone=57+3014102103&text=Hola%20Carolina,%20me%20gustaría%20contactarte%20por%20favor." target="_blank">
             <img className={style.imgredes} src={redeswhatsapp} alt="whatsapp" />
           </a>
         
@@ -78,16 +78,17 @@ function HomePrincipal() {
           </div>
           <div className={style.divnav2}>
         <h3 className={style.h3}>
+          
       {Array.from(text).map((letter, index) => (
         <span
-          key={index}
-          className={style['color-animation']}
-          style={{ animationDelay: `${index * 0.1}s` }}
+        key={index}
+        className={style['color-animation']}
+        style={{ animationDelay: `${index * 0.1}s` }}
         >
           {letter}
         </span>
       ))}
-    </h3>
+      </h3>
           <h1 className={style.h1} >Carolina Suárez</h1>
           <h1 className={style.h2} >Desarrolladora Web Full Stack</h1> 
         
@@ -141,11 +142,13 @@ function HomePrincipal() {
               <h1 className={style.h9}>Contacto</h1>
         <span className={style.spanSeccion4}>contactame por correo llenando estos campos: </span>
               <div className={style.divSeccion10}> 
+              <div className={style.mapa}>
               <div style={{ overflow: 'hidden', maxWidth: '100%', width: '500px', height: '500px' }}>
         <div id="google-maps-display" style={{ height: '90%', width: '90%', maxWidth: '90%' }}>
           <iframe style={{ height: '100%', width: '100%', border: '0' }} src="https://www.google.com/maps/embed/v1/place?q=Zipaquirá,+Cundinamarca,+Colombia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
         </div>
       </div>
+            </div>
         <div className={style.divSeccion11}>
         <ContactUs />
         </div>
